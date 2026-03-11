@@ -4,11 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gregory KANDU | Portfolio Pro</title>
-
+    <title>Gregory KANDU | Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -27,7 +25,7 @@
     </nav>
 
     <header id="home" class="hero">
-        <div class="hero-content" data-aos="zoom-out" data-aos-duration="1500">
+        <div class="hero-content" data-aos="zoom-out">
             <h1>Gregory <span>KANDU</span></h1>
             <p id="typewriter"></p>
             <div class="hero-btns">
@@ -38,20 +36,29 @@
     </header>
 
     <section id="about" class="section">
-        <div class="container about-flex">
-            <div class="about-image" data-aos="fade-right">
-                <img src="ma-photo.jpg" alt="Gregory KANDU" class="profile-img">
-                <div class="img-border"></div>
+        <div class="container about-wrapper">
+            <div class="about-left" data-aos="fade-right">
+                <div class="about-image-stack">
+                    <div class="photo-card card-1">
+                        <img src="ma-photo.jpg" alt="Gregory Kandu 1">
+                    </div>
+                    <div class="photo-card card-2">
+                        <img src="ma_photo.jpg" alt="Gregory Kandu 2">
+                    </div>
+                </div>
             </div>
-            <div class="about-text" data-aos="fade-left">
+
+            <div class="about-right" data-aos="fade-left">
                 <h2 class="section-title-left">À propos de moi</h2>
-                <p>Étudiant en <strong>BAC 2 Technologie (Génie Logiciel)</strong> à l'U.P.L, je conçois des solutions
-                    logicielles alliant performance et sécurité.</p>
-                <p>Mon expertise s'étend du développement Java à la programmation web, avec une rigueur acquise sur les
-                    terrains de <strong>Basketball qui est mon passe-temps préféré</strong>.</p>
-                <div class="personal-info">
-                    <p><i class="fas fa-university"></i> <strong>Université :</strong> Lubumbashi (U.P.L)</p>
-                    <p><i class="fas fa-envelope"></i> <strong>Email :</strong> kandugreg@gmail.com</p>
+                <div class="about-content">
+                    <p>Étudiant en <strong>BAC 2 Technologie (Génie Logiciel)</strong> à l'U.P.L, je conçois des
+                        solutions logicielles alliant performance et sécurité.</p>
+                    <p>Mon expertise s'étend du développement Java à la programmation web, avec une rigueur acquise sur
+                        les terrains de <strong>Basketball</strong>qui est mon passe-temps préféré.</p>
+                    <div class="personal-info">
+                        <p><i class="fas fa-university"></i> <strong>Université :</strong> Lubumbashi (U.P.L)</p>
+                        <p><i class="fas fa-envelope"></i> <strong>Email :</strong> kandugreg@gmail.com</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -60,48 +67,41 @@
     <section id="skills" class="section bg-alt">
         <h2 class="section-title" data-aos="fade-up">Mes Compétences</h2>
         <div class="skills-grid">
-            <div class="skill-card" data-aos="flip-left">
-                <i class="fab fa-java"></i>
-                <h3>Java / Desktop</h3>
-                <p>Applications de gestion robustes avec JavaFX.</p>
+            <div class="skill-card" data-aos="flip-left"><i class="fab fa-java"></i>
+                <h3>Java</h3>
+                <p>JavaFX & Desktop</p>
             </div>
-            <div class="skill-card" data-aos="flip-left" data-aos-delay="100">
-                <i class="fab fa-php"></i>
-                <h3>Web Backend</h3>
-                <p>Architecture PHP, Laravel et SQL.</p>
+            <div class="skill-card" data-aos="flip-left" data-aos-delay="100"><i class="fab fa-php"></i>
+                <h3>Web</h3>
+                <p>PHP & SQL</p>
             </div>
-            <div class="skill-card" data-aos="flip-left" data-aos-delay="200">
-                <i class="fas fa-shield-alt"></i>
+            <div class="skill-card" data-aos="flip-left" data-aos-delay="200"><i class="fas fa-shield-alt"></i>
                 <h3>Sécurité</h3>
-                <p>Kali Linux & Stéganographie.</p>
+                <p>Kali Linux</p>
             </div>
-            <div class="skill-card" data-aos="flip-left" data-aos-delay="300">
-                <i class="fas fa-project-diagram"></i>
+            <div class="skill-card" data-aos="flip-left" data-aos-delay="300"><i class="fas fa-project-diagram"></i>
                 <h3>Analyse</h3>
-                <p>Méthode Merise (MCD/MLD).</p>
+                <p>Merise</p>
             </div>
         </div>
     </section>
 
     <section id="projects" class="section">
-        <h2 class="section-title" data-aos="fade-up">Projets Réalisés</h2>
+        <h2 class="section-title" data-aos="fade-up">Projets</h2>
         <div class="projects-container">
-            <div class="project-card" data-aos="fade-up">
+            <div class="project-card">
                 <div class="project-overlay">
                     <h3>AppBoutique</h3>
-                    <p>Gestion de stock JavaFX.</p>
                 </div>
             </div>
-            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-card">
                 <div class="project-overlay">
                     <h3>Portail Étudiant</h3>
-                    <p>Web App PHP & PDF.</p>
                 </div>
             </div>
-            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-card">
                 <div class="project-overlay">
                     <h3>Cyber-Audit</h3>
-                    <p>Tests de vulnérabilité.</p>
                 </div>
             </div>
         </div>
@@ -111,16 +111,16 @@
         <h2 class="section-title" data-aos="fade-up">Contact</h2>
         <div class="contact-form-container" data-aos="zoom-in">
             <form id="contact-form">
-                <input type="text" placeholder="Nom complet" required>
-                <input type="email" placeholder="Adresse Email" required>
-                <textarea placeholder="Votre message..." rows="5" required></textarea>
+                <input type="text" placeholder="Nom" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" rows="5" required></textarea>
                 <button type="submit" class="btn primary">Envoyer</button>
             </form>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Gregory KANDU | Université Protestante de Lubumbashi</p>
+        <p>&copy; 2026 Gregory KANDU | U.P.L</p>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
