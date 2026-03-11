@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gregory KANDU | Portfolio Pro</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">GK<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content" data-aos="zoom-out" data-aos-duration="1500">
+            <h1>Gregory <span>KANDU</span></h1>
+            <p id="typewriter"></p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn primary">Mes Travaux</a>
+                <a href="#contact" class="btn secondary">Me contacter</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container about-flex">
+            <div class="about-image" data-aos="fade-right">
+                <img src="ma-photo.jpg" alt="Gregory KANDU" class="profile-img">
+                <div class="img-border"></div>
+            </div>
+            <div class="about-text" data-aos="fade-left">
+                <h2 class="section-title-left">À propos de moi</h2>
+                <p>Étudiant en <strong>BAC 2 Technologie (Génie Logiciel)</strong> à l'U.P.L, je conçois des solutions
+                    logicielles alliant performance et sécurité.</p>
+                <p>Mon expertise s'étend du développement JavaFX à la cybersécurité, avec une rigueur acquise sur les
+                    terrains de <strong>Basketball</strong>.</p>
+                <div class="personal-info">
+                    <p><i class="fas fa-university"></i> <strong>Université :</strong> Lubumbashi (U.P.L)</p>
+                    <p><i class="fas fa-envelope"></i> <strong>Email :</strong> kandugreg@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section bg-alt">
+        <h2 class="section-title" data-aos="fade-up">Mes Compétences</h2>
+        <div class="skills-grid">
+            <div class="skill-card" data-aos="flip-left">
+                <i class="fab fa-java"></i>
+                <h3>Java / Desktop</h3>
+                <p>Applications de gestion robustes avec JavaFX.</p>
+            </div>
+            <div class="skill-card" data-aos="flip-left" data-aos-delay="100">
+                <i class="fab fa-php"></i>
+                <h3>Web Backend</h3>
+                <p>Architecture PHP, Laravel et SQL.</p>
+            </div>
+            <div class="skill-card" data-aos="flip-left" data-aos-delay="200">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Sécurité</h3>
+                <p>Kali Linux & Stéganographie.</p>
+            </div>
+            <div class="skill-card" data-aos="flip-left" data-aos-delay="300">
+                <i class="fas fa-project-diagram"></i>
+                <h3>Analyse</h3>
+                <p>Méthode Merise (MCD/MLD).</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2 class="section-title" data-aos="fade-up">Projets Réalisés</h2>
+        <div class="projects-container">
+            <div class="project-card" data-aos="fade-up">
+                <div class="project-overlay">
+                    <h3>AppBoutique</h3>
+                    <p>Gestion de stock JavaFX.</p>
+                </div>
+            </div>
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-overlay">
+                    <h3>Portail Étudiant</h3>
+                    <p>Web App PHP & PDF.</p>
+                </div>
+            </div>
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-overlay">
+                    <h3>Cyber-Audit</h3>
+                    <p>Tests de vulnérabilité.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-alt">
+        <h2 class="section-title" data-aos="fade-up">Contact</h2>
+        <div class="contact-form-container" data-aos="zoom-in">
+            <form id="contact-form">
+                <input type="text" placeholder="Nom complet" required>
+                <input type="email" placeholder="Adresse Email" required>
+                <textarea placeholder="Votre message..." rows="5" required></textarea>
+                <button type="submit" class="btn primary">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Gregory KANDU | Université Protestante de Lubumbashi</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
