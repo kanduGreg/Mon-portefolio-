@@ -54,21 +54,15 @@
                     <p>
                         Passionné par l'ingénierie logicielle et les défis technologiques, je suis actuellement étudiant
                         en <strong>deuxième année de Licence (BAC 2)</strong> au sein du département des Sciences
-                        Informatiques à l'<strong>Université Protestante de Lubumbashi (U.P.L)</strong>. Mon parcours
-                        est orienté vers le développement Full-Stack, avec une maîtrise particulière de l'écosystème
-                        Java (JavaFX) pour les solutions desktop et PHP/SQL pour les architectures web.
+                        Informatiques à l'<strong>Université Protestante de Lubumbashi (U.P.L)</strong>.
                     </p>
                     <p>
                         Au-delà de la programmation, je cultive un intérêt marqué pour la
-                        <strong>cybersécurité</strong>, explorant les vulnérabilités réseaux et la stéganographie pour
-                        concevoir des systèmes plus sûrs. Créatif et rigoureux, j'ai déjà concrétisé plusieurs projets,
-                        notamment une application de gestion commerciale (AppBoutique) et une extension Chrome de
-                        détection de fake news.
+                        <strong>cybersécurité</strong>, explorant les vulnérabilités réseaux et la stéganographie.
                     </p>
                     <p>
-                        Mon esprit de compétition et mon sens du collectif, forgés sur les terrains de
-                        <strong>Basketball</strong>, sont des atouts que je transpose chaque jour dans la gestion de
-                        projets techniques et le travail en équipe.
+                        Mon esprit de compétition et mon sens du collectif sont forgés sur les terrains de
+                        <strong>Basketball</strong>.
                     </p>
 
                     <div class="personal-info">
@@ -103,21 +97,21 @@
     </section>
 
     <section id="projects" class="section">
-        <h2 class="section-title" data-aos="fade-up">Projets réaliser</h2>
+        <h2 class="section-title" data-aos="fade-up">Projets réalisés</h2>
         <div class="projects-container">
             <div class="project-card">
                 <div class="project-overlay">
-                    <h3>gestionnaire d'articles</h3>
+                    <h3>Gestionnaire d'articles</h3>
                 </div>
             </div>
             <div class="project-card">
                 <div class="project-overlay">
-                    <h3>Plate-forme de payement academique</h3>
+                    <h3>Plate-forme de paiement académique</h3>
                 </div>
             </div>
             <div class="project-card">
                 <div class="project-overlay">
-                    <h3>extension chrome de detection des fausse informations</h3>
+                    <h3>Extension Chrome Fake News</h3>
                 </div>
             </div>
         </div>
@@ -126,10 +120,10 @@
     <section id="contact" class="section bg-alt">
         <h2 class="section-title" data-aos="fade-up">Contact</h2>
         <div class="contact-form-container" data-aos="zoom-in">
-            <form id="contact-form">
-                <input type="text" placeholder="Nom" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Message" rows="5" required></textarea>
+            <form id="contact-form" action="contact.php" method="POST">
+                <input type="text" name="nom" placeholder="Nom" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Message" rows="5" required></textarea>
                 <button type="submit" class="btn primary">Envoyer</button>
             </form>
         </div>
