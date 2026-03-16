@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,20 +15,23 @@
             min-height: 100vh;
             padding: 20px;
         }
+
         .result-card {
             background: white;
             padding: 40px;
             border-radius: 20px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
             max-width: 500px;
             width: 100%;
         }
+
         .data-item {
             margin: 15px 0;
             padding: 10px;
             background: #f1f5f9;
             border-radius: 8px;
         }
+
         .data-item label {
             font-weight: 600;
             color: #3b82f6;
@@ -36,12 +40,13 @@
         }
     </style>
 </head>
+
 <body style="background: #f1f5f9;">
 
     <div class="result-container">
         <div class="result-card">
             <h2 class="section-title-left">Message envoyé !</h2>
-            
+
             <?php
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 // Récupération des données du formulaire
@@ -63,4 +68,5 @@
     </div>
 
 </body>
+
 </html>
